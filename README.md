@@ -1,3 +1,1 @@
-# Replugged theme template
-
-See the [theme development guide](https://guide.replugged.dev/docs/themes/getting-started) for more information on using this template.
+Since Flashcord Beta, several Flashcord Effects got removed due to either poor client performance or due to them being entirely useless. This official Flashcord Module will let you have them back.
