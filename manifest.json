@@ -3,17 +3,17 @@
   "name": "FCM: Extended Chat Effects",
   "description": "Flashcord Beta Module to add back previously removed Flashcord Alpha Chat Effects. ",
   "author": {
-		"name": "SiriusBYT",
-		"discordID": "311057290562371586",
-		"github": "SiriusBYT"
+    "name": "SiriusBYT",
+    "discordID": "311057290562371586",
+    "github": "SiriusBYT"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
     "id": "SiriusBYT/FCM_Extended-Chat-Effects"
   },
-  "license": "MIT",
-  "source": "https://github.com/replugged-org/theme-template",
+  "license": "Unlicense",
+  "source": "https://github.com/SiriusBYT/FCM_Extended-Chat-Effects",
   "type": "replugged-theme",
   "main": "src/main.css"
 }
