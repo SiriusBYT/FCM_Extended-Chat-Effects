@@ -15,3 +15,5 @@ This official Flashcord Module will let you have them back.
 - Spinning Effect
 - Rainbow Shadow
 - Splash Text Effect
+
+[Install](https://replugged.dev/install?identifier=SiriusBYT/FCM_Extended-Chat-Effects&source=github)
