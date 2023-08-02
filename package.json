@@ -14,7 +14,7 @@
     "lint:fix": "prettier ./src --write"
   },
   "keywords": [],
-  "author": "",
+  "author": "SiriusBYT",
   "license": "Unlicense",
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
