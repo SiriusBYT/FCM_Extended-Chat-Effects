@@ -1,7 +1,7 @@
 {
-  "name": "theme-template",
+  "name": "FCM: Extended Chat Effects",
   "version": "1.0.0",
-  "description": "A theme template",
+  "description": "Flashcord Beta Module to add back previously removed Flashcord Alpha Chat Effects. ",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
