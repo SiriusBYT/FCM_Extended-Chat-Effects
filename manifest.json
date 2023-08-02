@@ -1,16 +1,16 @@
 {
-  "id": "dev.replugged.ThemeTemplate",
-  "name": "Theme Template",
-  "description": "A theme template",
+  "id": "com.sirio-network.fcm-extended_chat_effects",
+  "name": "FCM: Extended Chat Effects",
+  "description": "Flashcord Beta Module to add back previously removed Flashcord Alpha Chat Effects. ",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+		"name": "SiriusBYT",
+		"discordID": "311057290562371586",
+		"github": "SiriusBYT"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/theme-template"
+    "id": "SiriusBYT/FCM_Extended-Chat-Effects"
   },
   "license": "MIT",
   "source": "https://github.com/replugged-org/theme-template",
