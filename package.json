@@ -1,6 +1,6 @@
 {
   "name": "FCM: Extended Chat Effects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flashcord Beta Module to add back previously removed Flashcord Alpha Chat Effects. ",
   "engines": {
     "node": ">=18.0.0",
