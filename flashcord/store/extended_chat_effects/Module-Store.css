@@ -1,3 +1,107 @@
 .Flashcord-Store_Description {
     flex-basis: 45vw !important;
 }
+
+
+@keyframes FCME-Loud {
+    0% { scale: 1; transform: rotate(0deg); margin: inherit;}
+    5% { transform: rotate(-5deg);}
+    10% { scale: 2; margin: auto; transform: rotate(5deg);}
+    15% { transform: rotate(-5deg);}
+    20% { transform: rotate(5deg);}
+    25% { transform: rotate(-5deg);}
+    30% { transform: rotate(5deg);}
+    35% { transform: rotate(-5deg);}
+    40% { transform: rotate(5deg);}
+    45% { transform: rotate(-5deg);}
+    50% { transform: rotate(5deg);}
+    55% { transform: rotate(-5deg);}
+    60% { transform: rotate(5deg);}
+    65% { transform: rotate(-5deg);}
+    70% { transform: rotate(5deg);}
+    75% { transform: rotate(-5deg);}
+    80% { transform: rotate(5deg); scale: 2; margin: auto;}
+    85% { transform: rotate(-5deg);}
+    89% { transform: rotate(0deg);}
+    90% { margin: inherit;}
+    100% { scale: 1;}
+  }
+  
+  @keyframes FCME-Quiet {
+    0% { scale: 1;}
+    25% { scale: 0.6}
+    75% { scale: 0.6;}
+    100% { scale: 1;}
+  }
+  
+  @keyframes FCME-Spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
+
+  
+
+.RainbowText {
+    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,127,0,1) 15%, rgba(255,255,0,1) 30%, rgba(0,255,0,1) 45%, rgba(0,0,255,1) 60%, rgba(170,0,170,1) 75%, rgba(255,170,255,1) 90%, rgba(255,0,0,1) 100%);
+    background-size: 64vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FlashCore-BackXMTL 2s linear infinite !important;
+}
+
+.Green {
+    background-color: rgba(0,255,0,0.25);
+}
+.Red {
+    background-color: rgba(255,0,0,0.25);
+}
+.Blue {
+    background-color: rgba(0,0,255,0.25);
+}
+
+.Loud {
+    animation: FCME-Loud 1s infinite;
+    width: fit-content; height: fit-content;
+}
+.Quiet {
+    animation: FCME-Quiet 8s infinite;
+    width: fit-content; height: fit-content;
+}
+
+.Spin {
+    animation: FCME-Spin 1s linear infinite;
+    width: fit-content; height: fit-content;
+}
+
+.RainbowShadow {
+    animation: Flashcord-GuildPulse 2s infinite linear;
+}
+
+.Splash {
+    transform: rotate(-2deg);
+    color: #CCCC00 !important;
+    animation: FlashCore-Splash 500ms ease-in-out infinite;
+    animation-direction: alternate;
+    width: fit-content; height: fit-content;
+}
+
+@keyframes FlashCore-BackXMTL {
+    0% { background-position-x: 0%;}
+    100% { background-position-x: 100vw;}
+}
+
+@keyframes Flashcord-GuildPulse {
+    0% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(255,0,0));}
+    15% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(255,127,0));}
+    30% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px)  rgb(255,255,0));}
+    45% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(0,255,0));}
+    60% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(0,0,255));}
+    75% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(170,0,170));}
+    90% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(255,170,255));}
+    100% {  filter: drop-shadow(0 0 var(--Flashcord-GuildShadow_Size, 4px) rgb(255,0,0));}
+}
+
+@keyframes FlashCore-Splash {
+    0% { scale: 0.8; }
+    100% { scale: 1.0; }
+} 
