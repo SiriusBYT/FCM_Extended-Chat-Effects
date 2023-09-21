@@ -1,0 +1,163 @@
+@container FC-ChatEffects_Animated (min-width: 0px) {
+  [href="http://flashcord/rainbow"],
+  [href="http://flashcord/background/green"],
+  [href="http://flashcord/background/red"],
+  [href="http://flashcord/background/blue"],
+  [href="http://flashcord/loud"],
+  [href="http://flashcord/quiet"],
+  [href="http://flashcord/spin"],
+  [href="http://flashcord/rainbow-shadow"],
+  [href="http://flashcord/splash"] {
+      display: none;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/rainbow"]) span {
+      background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,127,0,1) 15%, rgba(255,255,0,1) 30%, rgba(0,255,0,1) 45%, rgba(0,0,255,1) 60%, rgba(170,0,170,1) 75%, rgba(255,170,255,1) 90%, rgba(255,0,0,1) 100%);
+      background-size: 64vw;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: FlashCore-BackXMTL 2s linear infinite !important;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/background/green"]) {
+      background-color: rgba(0,255,0,0.25);
+  }
+  [id^="message-content-"]:has([href="http://flashcord/background/red"]) {
+      background-color: rgba(255,0,0,0.25);
+  }
+  [id^="message-content-"]:has([href="http://flashcord/background/blue"]) {
+      background-color: rgba(0,0,255,0.25);
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/loud"]) {
+      animation: FCME-Loud 1s;
+      width: fit-content; height: fit-content;
+  }
+  [id^="message-content-"]:has([href="http://flashcord/quiet"]) {
+      animation: FCME-Quiet 8s;
+      width: fit-content; height: fit-content;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/spin"]) {
+      animation: FCME-Spin 1s linear infinite;
+      width: fit-content; height: fit-content;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/rainbow-shadow"]) {
+      animation: Flashcord-GuildPulse 2s infinite linear;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/splash"]) {
+      transform: rotate(-2deg);
+      color: #CCCC00 !important;
+      animation: FlashCore-Splash 500ms ease-in-out infinite;
+      animation-direction: alternate;
+      width: fit-content; height: fit-content;
+  }
+}
+
+@container FC-ChatEffects_Text (min-width: 0px) {
+  [href="http://flashcord/rainbow"],
+  [href="http://flashcord/background/green"],
+  [href="http://flashcord/background/red"],
+  [href="http://flashcord/background/blue"],
+  [href="http://flashcord/loud"],
+  [href="http://flashcord/quiet"],
+  [href="http://flashcord/spin"],
+  [href="http://flashcord/rainbow-shadow"],
+  [href="http://flashcord/splash"] {
+      display: none;
+  }
+
+  [id^="message-content-"]:has([href="http://flashcord/rainbow"]):after {
+      content: "\A 🎉 Flashcord Effect: Rainbow";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+  [id^="message-content-"]:has([href="http://flashcord/background/green"]):after {
+      content: "\A 🎉 Flashcord Effect: Green Background";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+  [id^="message-content-"]:has([href="http://flashcord/background/red"]):after {
+      content: "\A 🎉 Flashcord Effect: Red Background";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/background/blue"]):after {
+      content: "\A 🎉 Flashcord Effect: Blue Background";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/loud"]):after {
+      content: "\A 🎉 Flashcord Effect: Loud";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/quiet"]):after {
+      content: "\A 🎉 Flashcord Effect: Quiet";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/spin"]):after {
+      content: "\A 🎉 Flashcord Effect: Spinning";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/rainbow-shadow"]):after {
+      content: "\A 🎉 Flashcord Effect: Rainbow Shadow";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+    [id^="message-content-"]:has([href="http://flashcord/splash"]):after {
+      content: "\A 🎉 Flashcord Effect: Splash";
+      white-space: pre;
+      color: var(--text-normal);
+      font-size: small;
+  }
+}
+
+
+@keyframes FCME-Loud {
+  0% { scale: 1; transform: rotate(0deg); margin: inherit;}
+  5% { transform: rotate(-5deg);}
+  10% { scale: 2; margin: auto; transform: rotate(5deg);}
+  15% { transform: rotate(-5deg);}
+  20% { transform: rotate(5deg);}
+  25% { transform: rotate(-5deg);}
+  30% { transform: rotate(5deg);}
+  35% { transform: rotate(-5deg);}
+  40% { transform: rotate(5deg);}
+  45% { transform: rotate(-5deg);}
+  50% { transform: rotate(5deg);}
+  55% { transform: rotate(-5deg);}
+  60% { transform: rotate(5deg);}
+  65% { transform: rotate(-5deg);}
+  70% { transform: rotate(5deg);}
+  75% { transform: rotate(-5deg);}
+  80% { transform: rotate(5deg); scale: 2; margin: auto;}
+  85% { transform: rotate(-5deg);}
+  89% { transform: rotate(0deg);}
+  90% { margin: inherit;}
+  100% { scale: 1;}
+}
+
+@keyframes FCME-Quiet {
+  0% { scale: 1;}
+  25% { scale: 0.6}
+  75% { scale: 0.6;}
+  100% { scale: 1;}
+}
+
+@keyframes FCME-Spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
