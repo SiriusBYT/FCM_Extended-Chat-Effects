@@ -1,3 +1,4 @@
+:root { --Flashcord-Store_ExtendedChatEffects: "✅ Present (v1.0.3)"; }
 @container FC-ChatEffects_Animated (min-width: 0px) {
   [href="http://flashcord/rainbow"],
   [href="http://flashcord/background/green"],
@@ -11,7 +12,7 @@
       display: none;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/rainbow"]) span {
+  [id^="message_"]:has([href="http://flashcord/rainbow"]) span {
       background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,127,0,1) 15%, rgba(255,255,0,1) 30%, rgba(0,255,0,1) 45%, rgba(0,0,255,1) 60%, rgba(170,0,170,1) 75%, rgba(255,170,255,1) 90%, rgba(255,0,0,1) 100%);
       background-size: 64vw;
       -webkit-background-clip: text;
@@ -19,35 +20,35 @@
       animation: FlashCore-BackXMTL 2s linear infinite !important;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/background/green"]) {
+  [id^="message_"]:has([href="http://flashcord/background/green"]) {
       background-color: rgba(0,255,0,0.25);
   }
-  [id^="message-content-"]:has([href="http://flashcord/background/red"]) {
+  [id^="message_"]:has([href="http://flashcord/background/red"]) {
       background-color: rgba(255,0,0,0.25);
   }
-  [id^="message-content-"]:has([href="http://flashcord/background/blue"]) {
+  [id^="message_"]:has([href="http://flashcord/background/blue"]) {
       background-color: rgba(0,0,255,0.25);
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/loud"]) {
+  [id^="message_"]:has([href="http://flashcord/loud"]) {
       animation: FCME-Loud 1s;
       width: fit-content; height: fit-content;
   }
-  [id^="message-content-"]:has([href="http://flashcord/quiet"]) {
+  [id^="message_"]:has([href="http://flashcord/quiet"]) {
       animation: FCME-Quiet 8s;
       width: fit-content; height: fit-content;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/spin"]) {
+  [id^="message_"]:has([href="http://flashcord/spin"]) {
       animation: FCME-Spin 1s linear infinite;
       width: fit-content; height: fit-content;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/rainbow-shadow"]) {
+  [id^="message_"]:has([href="http://flashcord/rainbow-shadow"]) {
       animation: Flashcord-GuildPulse 2s infinite linear;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/splash"]) {
+  [id^="message_"]:has([href="http://flashcord/splash"]) {
       transform: rotate(-2deg);
       color: #CCCC00 !important;
       animation: FlashCore-Splash 500ms ease-in-out infinite;
@@ -69,55 +70,55 @@
       display: none;
   }
 
-  [id^="message-content-"]:has([href="http://flashcord/rainbow"]):after {
+  [id^="message_"]:has([href="http://flashcord/rainbow"]):after {
       content: "\A 🎉 Flashcord Effect: Rainbow";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-  [id^="message-content-"]:has([href="http://flashcord/background/green"]):after {
+  [id^="message_"]:has([href="http://flashcord/background/green"]):after {
       content: "\A 🎉 Flashcord Effect: Green Background";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-  [id^="message-content-"]:has([href="http://flashcord/background/red"]):after {
+  [id^="message_"]:has([href="http://flashcord/background/red"]):after {
       content: "\A 🎉 Flashcord Effect: Red Background";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/background/blue"]):after {
+    [id^="message_"]:has([href="http://flashcord/background/blue"]):after {
       content: "\A 🎉 Flashcord Effect: Blue Background";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/loud"]):after {
+    [id^="message_"]:has([href="http://flashcord/loud"]):after {
       content: "\A 🎉 Flashcord Effect: Loud";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/quiet"]):after {
+    [id^="message_"]:has([href="http://flashcord/quiet"]):after {
       content: "\A 🎉 Flashcord Effect: Quiet";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/spin"]):after {
+    [id^="message_"]:has([href="http://flashcord/spin"]):after {
       content: "\A 🎉 Flashcord Effect: Spinning";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/rainbow-shadow"]):after {
+    [id^="message_"]:has([href="http://flashcord/rainbow-shadow"]):after {
       content: "\A 🎉 Flashcord Effect: Rainbow Shadow";
       white-space: pre;
       color: var(--text-normal);
       font-size: small;
   }
-    [id^="message-content-"]:has([href="http://flashcord/splash"]):after {
+    [id^="message_"]:has([href="http://flashcord/splash"]):after {
       content: "\A 🎉 Flashcord Effect: Splash";
       white-space: pre;
       color: var(--text-normal);
