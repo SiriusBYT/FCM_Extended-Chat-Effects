@@ -1,4 +1,4 @@
-:root { --Flashcord-Store_ExtendedChatEffects: "✅ Present (v1.0.3)"; }
+:root { --Flashcord-Store_ExtendedChatEffects: "✅ Present (v1.0.4)"; }
 @container FC-ChatEffects_Animated (min-width: 0px) {
   [href="http://flashcord/rainbow"],
   [href="http://flashcord/background/green"],
@@ -12,7 +12,7 @@
       display: none;
   }
 
-  [id^="message_"]:has([href="http://flashcord/rainbow"]) span {
+  [id^="message_"]:has([href="http://flashcord/rainbow"]) {
       background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,127,0,1) 15%, rgba(255,255,0,1) 30%, rgba(0,255,0,1) 45%, rgba(0,0,255,1) 60%, rgba(170,0,170,1) 75%, rgba(255,170,255,1) 90%, rgba(255,0,0,1) 100%);
       background-size: 64vw;
       -webkit-background-clip: text;
